@@ -1,0 +1,96 @@
+1. echo hello world
+   hello world
+
+2. passwd
+
+   (current) UNIX password:
+   Enter new UNIX password:
+   Retype new UNIX password:
+
+   passwd: password updated successfully
+
+3. date 
+
+   Fri Jan 17 09:33:33 +07 2020
+
+4. hostname
+
+   ubuntu
+
+5. arch
+
+   x86_64
+
+6. uname
+
+   Linux ubuntu 5.0.0-23-generic #24~18.04.1-Ubuntu SMP Mon Jul 29 16:12:28 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+7. dmesg | tail -10
+
+   [ 3383.219270] systemd-journald[410]: Failed to write entry (24 items, 587 bytes), ignoring: Read-only file system
+   [ 3383.219444] systemd-journald[410]: Failed to write entry (24 items, 579 bytes), ignoring: Read-only file system
+   [ 3383.220613] systemd-journald[410]: Failed to write entry (21 items, 601 bytes), ignoring: Read-only file system
+   [ 3383.221400] systemd-journald[410]: Failed to write entry (21 items, 692 bytes), ignoring: Read-only file system
+   [ 3383.221585] systemd-journald[410]: Failed to write entry (21 items, 601 bytes), ignoring: Read-only file system
+   [ 3383.221711] systemd-journald[410]: Failed to write entry (21 items, 692 bytes), ignoring: Read-only file system
+   [ 3383.221801] systemd-journald[410]: Failed to write entry (21 items, 601 bytes), ignoring: Read-only file system
+   [ 3383.221886] systemd-journald[410]: Failed to write entry (21 items, 692 bytes), ignoring: Read-only file system
+   [ 3383.221969] systemd-journald[410]: Failed to write entry (21 items, 580 bytes), ignoring: Read-only file system
+   [ 3383.222054] systemd-journald[410]: Failed to write entry (21 items, 601 bytes), ignoring: Read-only file system
+
+8. uptime
+
+   09:40:42 up 48 min,  1 user,  load average: 0.02, 0.05, 0.05
+
+9. who am i
+
+10. whoami
+
+    anhnguyen3275
+
+11. who
+
+    anhnguyen3275 :0           2020-01-17 08:52 (:0)
+
+12. id
+
+    uid=1000(anhnguyen3275) gid=1000(anhnguyen3275) groups=1000(anhnguyen3275),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+
+13. last
+
+    anhnguye :0           :0               Fri Jan 17 08:52   still logged in
+    reboot   system boot  5.0.0-23-generic Fri Jan 17 08:52   still running
+    anhnguye :0           :0               Wed Jan  8 21:30 - crash (8+11:21)
+    reboot   system boot  5.0.0-23-generic Wed Jan  8 21:29   still running
+    anhnguye :0           :0               Wed Jan  8 13:20 - crash  (08:09)
+    reboot   system boot  5.0.0-23-generic Wed Jan  8 13:20   still running
+    anhnguye :0           :0               Wed Jan  8 13:06 - crash  (00:13)
+    reboot   system boot  5.0.0-23-generic Wed Jan  8 13:00   still running
+
+    wtmp begins Wed Jan  8 13:00:59 2020
+
+14. finger
+
+    Command 'finger' not found, but can be installed with:
+
+    sudo apt install finger
+
+15. w
+
+    09:45:42 up 53 min,  1 user,  load average: 0.01, 0.03, 0.04
+    USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+    anhnguye :0       :0               08:52   ?xdm?   1:05   0.00s /usr/lib/g
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
