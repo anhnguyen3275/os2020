@@ -1,0 +1,67 @@
+1. List all running processes
+
+   ps -e | tail -10
+
+   3814 ?          00:00:09 gnome-terminal-
+   3824 pts/0    00:00:00 bash
+   4073 ?          00:00:00 kworker/u256:1-
+
+   4130 ?          00:00:00 kworker/1:1-cgr
+   4155 ?          00:00:00 kworker/0:1-cgr
+   4171 ?          00:00:00 kworker/u256:2-
+   4214 ?          00:00:00 kworker/1:2
+   4215 ?          00:00:00 snapd
+   4232 pts/0    00:00:00 ps
+   4233 pts/0    00:00:00 tail
+
+   ps -e | man news
+
+   No manual entry for news
+
+2. Start a new process
+
+   gnome-terminal
+
+   -> new process created
+
+3. Find process id
+
+   ps -e | grep "terminal"
+
+   3814 ?        00:00:13 gnome-terminal-
+
+4. Show its process status
+
+   cat /proc/3814/status | tail -10
+
+   CapAmb:	0000000000000000
+   NoNewPrivs:	0
+   Seccomp:	0
+   Speculation_Store_Bypass:	thread vulnerable
+   Cpus_allowed:	ffffffff,ffffffff,ffffffff,ffffffff
+   Cpus_allowed_list:	0-127
+   Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+   Mems_allowed_list:	0
+   voluntary_ctxt_switches:	28744
+   nonvoluntary_ctxt_switches:	2727
+
+5. Pause it
+
+   kill -STOP 3814
+
+6. Resume it
+
+   kill -CONT 3814
+
+7. Terminate it
+
+   kill -KILL 3814
+
+   
+
+   
+
+   
+
+   
+
