@@ -1,0 +1,36 @@
+1. List all the files
+
+   ls | grep "list"
+
+   There is no file on "list" -> no output.
+
+2. Count the lines
+
+   wc /etc/passwd
+
+   41   70 2425 /etc/passwd
+
+3. Check memory, use 'free'
+
+            total      used        free      shared   buff/cache   available
+   Mem:        2013464     1480972      140696        14472         391796           364056
+   Swap:        969960       51200         918760
+
+4. Logical core the CPU has
+
+   cat /proc/cpuinfo | grep core
+
+   core id		: 0
+   cpu cores	: 2
+   core id		: 1
+   cpu cores	: 2
+
+5. Count .jpg files in photo directory
+
+   find . -name "*jpg" | wc -l
+
+   0
+
+   
+
+   
