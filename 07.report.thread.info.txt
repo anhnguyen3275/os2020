@@ -1,0 +1,21 @@
+Show number of threads for process firefox
+
+ps -e -f | grep "firefox"
+
+- ps with NLWP  
+
+  ps -o nlwp 3959
+
+  -> result:
+
+  NLWP
+     1
+
+- Count number of subdirectory in
+  /proc/<processId>/tasks  
+
+  ls /proc/3959/task | wc -w
+
+  -> result:
+
+  1
